@@ -1,0 +1,31 @@
+include <stdio.h>
+
+/**
+ * Recursive function to print numbers in a given range. 
+ */
+void printNums(int N1, int N2)
+{if(N1>N2){
+return ; 
+    // if the lower limit is greater than upper limit null is returned else lower limit is printed and is increased by 1 and recursively the function is called to print all the elements until the lower limit exceeds the upper limit ; 
+    
+}
+ else{printf("%d ",N1); 
+      
+     return printNums(N1+1,N2) ; }
+    //follow the definition and type your code here.
+}
+
+
+int main()
+{
+    int N1, N2;
+    
+    scanf("%d", &N1);
+    
+    scanf("%d", &N2);
+    
+    printNums(N1, N2); 
+    
+    return 0;
+}
+
